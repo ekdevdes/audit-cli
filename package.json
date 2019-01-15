@@ -2,6 +2,11 @@
   "name": "audit-bot",
   "version": "1.0.0",
   "description": "A bot to audit the performance, best practices, accessiblity, SEO, PWA and security of your site.",
+  "scripts": {
+    "postinstall": "npm i -g typescript",
+    "lint": "tsc",
+    "lint:watch": "tsc --watch"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ekdevdes/audit-bot.git"
@@ -27,6 +32,10 @@
   },
   "homepage": "https://github.com/ekdevdes/audit-bot#readme",
   "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.2.3",
+    "@babel/plugin-proposal-object-rest-spread": "^7.2.0",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/preset-typescript": "^7.1.0",
     "eslint": "^5.8.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.14.0"
