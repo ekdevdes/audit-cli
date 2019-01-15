@@ -6,7 +6,7 @@
         "noEmit": true,
         // "strict": true,
         // "isolatedModules": true,
-        // "esModuleInterop": true
+        "esModuleInterop": true
     },
     "include": [
         "src/**/*"
